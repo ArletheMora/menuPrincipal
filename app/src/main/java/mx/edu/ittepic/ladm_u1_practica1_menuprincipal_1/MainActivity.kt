@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var suma = 0
+
         binding.lista.setOnClickListener {
             //El activity 2 lo guardamos en una variable
             var otroActivity = Intent(this, MainActivity2::class.java)
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
             //Mandar mensaje de que se guardo
             Toast.makeText(this, "Se agrego el producto", Toast.LENGTH_LONG)
                 .show()
+
+            borrarCampos()
         }
 
         binding.eliminar.setOnClickListener {

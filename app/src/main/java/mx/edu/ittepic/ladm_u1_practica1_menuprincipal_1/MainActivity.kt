@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import kotlinx.android.synthetic.main.activity_main.*
 import mx.edu.ittepic.ladm_u1_practica1_menuprincipal_1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,5 +27,31 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Se agrego el producto", Toast.LENGTH_LONG)
                 .show()
         }
+
+        binding.eliminar.setOnClickListener {
+            //Alertar que se va a eliminar
+            var n_producto = producto.text.toString()
+
+            AlertDialog.Builder(this)
+                .setTitle("Importante")
+                .setMessage("Borrarás los datos del producto: " + n_producto)
+                .setPositiveButton("Aceptar"){ d, i->
+                    d.dismiss()
+                    borrarCampos()
+                }
+
+                .setNegativeButton("Cancelar"){d, i->
+                    d.cancel()
+                    Toast.makeText(this, "Cancelado", Toast.LENGTH_SHORT)
+                }
+
+                .show()
+        }
+    }
+
+    fun borrarCampos(){
+        producto.setText("")
+        cantidad.setText("")
+        precio.setText("")
     }
 }

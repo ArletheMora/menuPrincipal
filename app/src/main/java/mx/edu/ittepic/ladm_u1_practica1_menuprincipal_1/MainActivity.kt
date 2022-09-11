@@ -47,6 +47,10 @@ class MainActivity : AppCompatActivity() {
 
                 .show()
         }
+
+        binding.salir.setOnClickListener {
+            finish()
+        }
     }
 
     fun borrarCampos(){

@@ -10,7 +10,6 @@ import mx.edu.ittepic.ladm_u1_practica1_menuprincipal_1.databinding.ActivityMain
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -51,6 +50,13 @@ class MainActivity : AppCompatActivity() {
         binding.salir.setOnClickListener {
             finish()
         }
+
+        binding.vertotal.setOnClickListener {
+            var Activity3 = Intent(this, MainActivity3::class.java)
+            startActivity(Activity3)
+        }
+
+
     }
 
     fun borrarCampos(){

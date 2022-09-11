@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EDE6"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_gravity="center|top"
+        android:textSize="40sp"
+        android:textColor="#29589F"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="205dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/productoslacteos"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"/>
+
+
+</FrameLayout>

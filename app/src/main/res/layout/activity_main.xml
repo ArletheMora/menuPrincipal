@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/c038c8d17f4d93cc4a3975a56e9e6a89"
+    android:background="#F6EDE6"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,16 +13,18 @@
         android:text="COMPRAS"
         android:layout_gravity="center|top"
         android:textSize="40sp"
-        android:textColor="#000"
+        android:textColor="#29589F"
         android:textStyle="bold|italic"
         android:layout_marginTop="20dp"/>
 
     <ImageView
-        android:layout_width="3025dp"
-        android:layout_height="250dp"
+        android:layout_width="205dp"
+        android:layout_height="156dp"
         android:layout_gravity="center|top"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/ic_baseline_add_business_24"/>
+        android:layout_marginTop="70dp"
+        android:src="@drawable/carritodecompras"
+        />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,7 +44,10 @@
         android:layout_marginLeft="40dp"
         android:textSize="30sp"
         android:inputType="textPersonName"
-        android:hint="Ingrese producto"/>
+        android:hint="Ingrese producto"
+        android:textColorHint="#6DC86D6D"
+        android:textColor="#000"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,7 +67,9 @@
         android:layout_marginLeft="40dp"
         android:textSize="30sp"
         android:inputType="numberDecimal"
-        android:hint="Precio"/>
+        android:textColorHint="#6DC86D6D"
+        android:hint="Precio"
+        android:textColor="#000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,6 +89,8 @@
         android:layout_marginLeft="40dp"
         android:textSize="30sp"
         android:inputType="number"
+        android:textColorHint="#6DC86D6D"
+        android:textColor="#000"
         android:hint="Cantidad"/>
 
     <Button
@@ -107,21 +116,21 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total"
+        android:text="Lista"
         android:textSize="18sp"
         android:backgroundTint="#A35C5C"
-        android:id="@+id/total"
+        android:id="@+id/lista"
         android:layout_marginTop="600dp"
         android:layout_marginLeft="285dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Otro"
+        android:text="Ver total"
         android:textSize="18sp"
         android:backgroundTint="#A35C5C"
         android:layout_marginTop="650dp"
-        android:layout_marginLeft="110dp"/>
+        android:layout_marginLeft="15dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -130,7 +139,7 @@
         android:backgroundTint="#A35C5C"
         android:textSize="18sp"
         android:layout_marginTop="650dp"
-        android:layout_marginLeft="210dp"/>
+        android:layout_marginLeft="160dp"/>
 
 
 

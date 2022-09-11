@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EDE6"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista"
+        android:layout_gravity="center|top"
+        android:textSize="40sp"
+        android:textColor="#29589F"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="205dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/productoslacteos"
+        />
+
+</FrameLayout>

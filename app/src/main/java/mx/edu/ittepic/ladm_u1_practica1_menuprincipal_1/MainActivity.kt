@@ -42,11 +42,13 @@ class MainActivity : AppCompatActivity() {
                     d.dismiss()
                     Toast.makeText(this, "No cuentas con productos para eliminar", Toast.LENGTH_LONG)
                     //borrarCampos()
+                        .show()
                 }
 
                 .setNegativeButton("Cancelar"){d, i->
                     d.cancel()
                     Toast.makeText(this, "Cancelado", Toast.LENGTH_SHORT)
+                        .show()
                 }
 
                 .show()

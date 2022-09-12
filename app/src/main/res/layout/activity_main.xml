@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F6EDE6"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -25,123 +28,56 @@
         android:src="@drawable/carritodecompras"
         />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Producto"
-        android:textSize="30sp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="300dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/producto"
-        android:layout_marginTop="330dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="30sp"
-        android:inputType="textPersonName"
-        android:hint="Ingrese producto"
-        android:textColorHint="#6DC86D6D"
-        android:textColor="#000"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Precio"
-        android:textSize="30sp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="400dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/precio"
-        android:layout_marginTop="430dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="30sp"
-        android:inputType="numberDecimal"
-        android:textColorHint="#6DC86D6D"
-        android:hint="Precio"
-        android:textColor="#000"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cantidad"
-        android:textSize="30sp"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="500dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cantidad"
-        android:layout_marginTop="530dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="30sp"
-        android:inputType="number"
-        android:textColorHint="#6DC86D6D"
-        android:textColor="#000"
-        android:hint="Cantidad"/>
-
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agregar"
-        android:textSize="18sp"
+        android:textSize="30sp"
+        android:background="@drawable/btn_uno"
+        android:textColor="@drawable/txt_btn_uno"
         android:id="@+id/agregar"
-        android:backgroundTint="#A35C5C"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginTop="300dp"
+        />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Eliminar"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:id="@+id/eliminar"
-        android:backgroundTint="#A35C5C"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="150dp"/>
+        android:background="@drawable/btn_uno"
+        android:textColor="@drawable/txt_btn_uno"
+        android:layout_marginTop="370dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lista"
-        android:textSize="18sp"
-        android:backgroundTint="#A35C5C"
+        android:textSize="30sp"
+        android:background="@drawable/btn_uno"
+        android:textColor="@drawable/txt_btn_uno"
         android:id="@+id/lista"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="285dp"/>
+        android:layout_marginTop="440dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ver total"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:id="@+id/vertotal"
-        android:backgroundTint="#A35C5C"
-        android:layout_marginTop="650dp"
-        android:layout_marginLeft="15dp"/>
+        android:background="@drawable/btn_uno"
+        android:textColor="@drawable/txt_btn_uno"
+        android:layout_marginTop="510dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salir"
-        android:backgroundTint="#A35C5C"
-        android:textSize="18sp"
+        android:background="@drawable/btn_uno"
+        android:textColor="@drawable/txt_btn_uno"
+        android:textSize="30sp"
         android:id="@+id/salir"
-        android:layout_marginTop="650dp"
-        android:layout_marginLeft="160dp"/>
+        android:layout_marginTop="580dp"/>
 
 
 </FrameLayout>

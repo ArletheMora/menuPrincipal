@@ -25,22 +25,23 @@ class MainActivity : AppCompatActivity() {
 
         binding.agregar.setOnClickListener {
             //Mandar mensaje de que se guardo
-            Toast.makeText(this, "Se agrego el producto", Toast.LENGTH_LONG)
+            Toast.makeText(this, "Por el momento no se puede agregar un producto", Toast.LENGTH_LONG)
                 .show()
 
-            borrarCampos()
+            //borrarCampos()
         }
 
         binding.eliminar.setOnClickListener {
             //Alertar que se va a eliminar
-            var n_producto = producto.text.toString()
+            //var n_producto = producto.text.toString()
 
             AlertDialog.Builder(this)
                 .setTitle("Importante")
-                .setMessage("Borrarás los datos del producto: " + n_producto)
+                .setMessage("¿Deseas eliminar un producto?")
                 .setPositiveButton("Aceptar"){ d, i->
                     d.dismiss()
-                    borrarCampos()
+                    Toast.makeText(this, "No cuentas con productos para eliminar", Toast.LENGTH_LONG)
+                    //borrarCampos()
                 }
 
                 .setNegativeButton("Cancelar"){d, i->
@@ -63,9 +64,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun borrarCampos(){
+    /*fun borrarCampos(){
         producto.setText("")
         cantidad.setText("")
         precio.setText("")
-    }
+    }*/
 }

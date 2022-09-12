@@ -25,9 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.agregar.setOnClickListener {
             //Mandar mensaje de que se guardo
-            Toast.makeText(this, "Por el momento no se puede agregar un producto", Toast.LENGTH_LONG)
-                .show()
+            //Toast.makeText(this, "Por el momento no se puede agregar un producto", Toast.LENGTH_LONG)
+              //  .show()
 
+            var otroActivity = Intent(this, MainActivity4::class.java)
+            startActivity(otroActivity) //Activar
             //borrarCampos()
         }
 

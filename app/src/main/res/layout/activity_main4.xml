@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EDE6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPRAS"
+        android:layout_gravity="center|top"
+        android:textSize="40sp"
+        android:textColor="#29589F"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="205dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/carritodecompras"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Producto"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/producto"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:inputType="textPersonName"
+        android:hint="Ingrese producto"
+        android:textColorHint="#6DC86D6D"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/precio"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:inputType="numberDecimal"
+        android:textColorHint="#6DC86D6D"
+        android:hint="Precio"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="500dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cantidad"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:inputType="number"
+        android:textColorHint="#6DC86D6D"
+        android:textColor="#000"
+        android:hint="Cantidad"/>
+
+
+</FrameLayout>
